@@ -1,0 +1,80 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 20px;
+}
+
+/* Container Flexbox */
+.container{
+    display: flex;              /* 1 */
+    flex-direction: row;        /* 2 */
+    flex-wrap: wrap;            /* 3 */
+    justify-content: center;    /* 4 */
+    align-items: center;        /* 5 */
+    align-content: center;      /* 6 */
+    gap: 20px;                  /* 7 */
+    row-gap: 20px;              /* 8 */
+    column-gap: 20px;           /* 9 */
+    width: 100%;                /* 10 */
+    min-height: 100vh;          /* 11 */
+    padding: 20px;              /* 12 */
+    background: white;
+}
+
+/* Elementos */
+.caixa{
+    width: 150px;               /* Content */
+    height: 100px;              /* Content */
+
+    padding: 20px;              /* Padding */
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    border: 3px solid blue;     /* Border */
+    border-radius: 10px;
+    border-color: blue;
+    border-style: solid;
+    border-width: 3px;
+
+    margin: 10px;               /* Margin */
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+    background-color: lightblue;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px;
+
+    display: flex;              /* 13 */
+    justify-content: center;    /* 14 */
+    align-items: center;        /* 15 */
+    flex-grow: 1;               /* 16 */
+    flex-shrink: 1;             /* 17 */
+    flex-basis: 150px;          /* 18 */
+    order: 0;                   /* 19 */
+    align-self: auto;           /* 20 */
+}
+
+/* Responsividade */
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+
+    .caixa{
+        width: 90%;
+    }
+}
